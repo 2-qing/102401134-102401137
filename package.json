@@ -1,0 +1,15 @@
+{
+  "name": "campus-lost-found",
+  "version": "1.0.0",
+  "description": "校园失物招领 —— 结对编程作业（102401134 王清源 & 102401137 佘博海）",
+  "scripts": {
+    "test": "mocha tests/core.test.js --reporter spec",
+    "test:watch": "mocha tests/core.test.js --reporter spec --watch"
+  },
+  "keywords": ["lost-and-found", "campus", "pair-programming"],
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
