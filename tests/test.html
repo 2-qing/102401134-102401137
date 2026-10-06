@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单元测试 · 校园失物招领（Mocha + Chai）</title>
+  <link rel="stylesheet" href="lib/mocha.css">
+  <style>
+    body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; margin: 0; background: #f5f7fb; }
+    #topbar {
+      background: linear-gradient(135deg, #4f6ef7, #17b8a6); color: #fff;
+      padding: 22px 28px; box-shadow: 0 4px 16px rgba(24,33,66,.15);
+    }
+    #topbar h1 { margin: 0 0 4px; font-size: 20px; }
+    #topbar p { margin: 0; opacity: .92; font-size: 13.5px; }
+    #topbar code { background: rgba(255,255,255,.2); padding: 1px 6px; border-radius: 5px; }
+    #mocha { margin: 20px auto; max-width: 960px; background: #fff; border-radius: 14px; padding: 18px 26px; box-shadow: 0 6px 18px rgba(24,33,66,.08); }
+    #mocha h2 { font-size: 15px; }
+    #mocha .test.pass .duration { color: #2f9e6e; }
+    #mocha-stats em { color: #4f6ef7; }
+    a { color: #4f6ef7; }
+  </style>
+</head>
+<body>
+  <div id="topbar">
+    <h1>校园失物招领 · 单元测试</h1>
+    <p>测试框架：Mocha + Chai &nbsp;|&nbsp; 被测模块：<code>js/core.js</code>（核心业务逻辑）&nbsp;|&nbsp;
+       也可在命令行运行 <code>npm test</code> 得到相同结果</p>
+  </div>
+
+  <div id="mocha"></div>
+
+  <!-- 测试框架（本地文件，无需联网） -->
+  <script src="lib/mocha.js"></script>
+  <script src="lib/chai.js"></script>
+  <script>mocha.setup('bdd');</script>
+
+  <!-- 被测代码 -->
+  <script src="../js/core.js"></script>
+
+  <!-- 测试用例 -->
+  <script src="core.test.js"></script>
+
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>

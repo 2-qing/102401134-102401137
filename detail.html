@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>信息详情 · 校园失物招领</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="brand-logo" id="brandLogo"></span>
+        <span>校园失物招领</span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="my-posts.html">我的发布</a>
+        <a class="nav-link nav-publish" href="publish.html">发布信息</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a>
+        <span>/</span>
+        <span>信息详情</span>
+      </div>
+
+      <div id="detailRoot"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>校园失物招领 · 结对编程作业（102401134 王清源 &amp; 102401137 佘博海）</span>
+      <span>请文明联系，谨防诈骗；线下交接请注意安全</span>
+    </div>
+  </footer>
+
+  <!-- 确认模态框 -->
+  <div class="modal-mask" id="modalMask">
+    <div class="modal">
+      <h3 id="modalTitle">确认操作</h3>
+      <p id="modalText"></p>
+      <div class="modal-actions">
+        <button class="btn" id="modalCancel">取消</button>
+        <button class="btn btn-primary" id="modalOk">确定</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>
